@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfg  configDir='/home/aluser01/work/Algo/config/'>
+        <Macros MODULES="" DATA="/datas/songsz/xtp_ticksource2"/>
+  <Universe disable = ""/>
+  <Account   headTime="93105000" tailTime="145300000" closeTime="145655000"   ContinuousOrderTime="3100" 
+          CancelOrderTime ="9500"  slope="0.9"  tailTimeGroup1="145300000"  closeTimeGroup1="145655000"
+
+                        delayTimeLimit="4000"  portExposureLmit="1050000000" minAmtPerTrade = "100"  
+                        amtPerTrade = "300000"  volumePerTrade = "12000"
+                        tradeType = "S1TF" TradeAccount ="ZTTESTA" localConfig="true" 
+                        remainedTime = "2" nUnit="7"  limitRatio="0.35"
+
+                        fixedTimes="240|"
+                        targetTimes = "093000|"
+                        addOrderMode="target"  waitG1="true"    
+                        ifFixedtime="true" ifFixedtimeG1 = "true" fixedTimeG1="5"
+                        OrderRetInit = "0"
+
+                        nextTimes = "093900|"  waitPreOrder = "false"  cancelOrderLimit = "0.30"
+                        preTimes = "090000|" 
+                        spreadX = "1"   ADJThresholdBps = "0"
+
+                         NSlicesAdjList = "0|"
+                          ContinuousOrderTrades = "20"  lastNOrderNum = "20"  lastNTradeNum = "20"  slient_time = "5"
+                          maxOrderRatio = "0.533"   ifMyorderbook = "false"
+                        passfilter = "false" sizeFilterMap_path = "/home/aluser01/work/Algo/config/TWAP/AlgoPara/sizeFilter.csv" 
+                        ></Account>
+  <OrderFile filename="lzy_score" 
+		shared_memory_path = "/sz_scoreV3_20240820"
+		codeCsvPath = "/datas/liyl/algo/uni.csv"
+  ></OrderFile>
+</cfg>
+
+
